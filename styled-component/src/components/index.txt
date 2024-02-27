@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+    <style>
+        *{
+padding: 10px;
+margin: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+box-sizing: border-box;
+}
+
+.inputBox{
+    position: relative;
+    width: 250px;
+
+}
+.inputBox input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid blueviolet;
+    background: #1d2b3a;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+
+}
+.inputBox span{
+    position: absolute;
+    left: 5px;
+    padding: 10px;
+    pointer-events: none;
+    color: #8f8a8a;
+    text-transform: uppercase;
+    transition: 0.5s;
+
+}
+
+.inputBox input:valid ~  span,
+.inputBox input:focus ~  span{
+    color: aqua;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #1d2b3a;
+    
+}
+    </style>
+</head>
+
+<body>
+    <div >
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" required ="required">
+                <span>First Name</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" required = "required">
+                <span>Last Name</span>
+            </div>
+
+
+            
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
